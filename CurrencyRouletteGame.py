@@ -31,17 +31,15 @@ def get_guess_from_user():
     return user_number
 
 
-def play3(game, diff):
-    if int(game) == 3:
-        print("Welcome to the Currency Roulette Game.\n"
-              "In this game the computer will generate an amount of USD between 1 to 100.\n"
-              "You need to enter the value of this generated amount in ILS.")
-        num_converted = get_money_interval()
-        user_number = float(get_guess_from_user())
-        if (num_converted - (5 - diff)) < user_number < (num_converted + (5 - diff)):
-            print(f'You WON! \nThe number is: {num_converted}')
-        else:
-            print(f' You Lost.\nThe number is: {num_converted}')
-
-
-# play3(3, 4)
+def play3(diff):
+    print("Welcome to the Currency Roulette Game.\n"
+          "In this game the computer will generate an amount of USD between 1 to 100.\n"
+          "You need to enter the value of this generated amount in ILS.")
+    num_converted = get_money_interval()
+    user_number = float(get_guess_from_user())
+    if (num_converted - (5 - diff)) < user_number < (num_converted + (5 - diff)):
+        print(f'You WON! \nThe number is: {num_converted}')
+        return True
+    else:
+        print(f' You Lost.\nThe number is: {num_converted}')
+        return False

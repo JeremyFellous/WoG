@@ -1,3 +1,9 @@
+from GuessGame import play2
+from MemoryGame import play
+from CurrencyRouletteGame import play3
+from Score import add_score
+
+
 def welcome():
     name = str(input('Enter your name:'))
     print(f'\nHello {name} and welcome to the World of Game (WoG).\n Here you can find many cool games to play.')
@@ -30,4 +36,11 @@ def load_game():
             print('\nGame number is not in range, please try again...')
         else:
             ok = True
-    return game, int(diff)
+    if int(game) == 1:
+        score = play(int(diff))
+    elif int(game) == 2:
+        score = play2(int(diff))
+    elif int(game) == 3:
+        score = play3(int(diff))
+    if score:
+        add_score(diff)

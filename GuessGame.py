@@ -30,12 +30,13 @@ def compare_result(a, b):
     return int(b) == a
 
 
-def play(game, diff):
-    if int(game) == 2:
-        generated = generate_number(diff)
-        guess = get_guess_from_user(diff)
-        solution = compare_result(generated, guess)
-        if solution:
-            print("You WON!!")
-        else:
-            print(f'You Lost\nThe number was: {generated}')
+def play2(diff):
+    generated = generate_number(diff)
+    guess = get_guess_from_user(diff)
+    solution = compare_result(generated, guess)
+    if solution:
+        print("You WON!!")
+        return True
+    else:
+        print(f'You Lost\nThe number was: {generated}')
+        return False
