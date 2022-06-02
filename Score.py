@@ -1,6 +1,7 @@
 from Utils import SCORES_FILE_NAME, BAD_RETURN_CODE
 from genericpath import exists
 import os
+# from MainScores import
 
 
 def get_score():
@@ -24,3 +25,4 @@ def add_score(diff):
         with open(SCORES_FILE_NAME, 'w') as f:
             f.write(str(point_of_winning + int(my_score)))
             print(f'\nYour total score is: {point_of_winning + int(my_score)}')
+
