@@ -1,7 +1,7 @@
 from games.GuessGame import play2
 from games.MemoryGame import play
 from games.CurrencyRouletteGame import play3
-from Score import add_score
+from WoG.score.Score import add_score
 
 
 def welcome():

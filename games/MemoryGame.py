@@ -1,6 +1,6 @@
 import random
 import time
-from Score import add_score
+from WoG.score.Score import add_score
 
 
 def generate_sequence(diff):

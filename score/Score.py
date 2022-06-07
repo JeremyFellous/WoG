@@ -1,12 +1,12 @@
-from Utils import SCORES_FILE_NAME, BAD_RETURN_CODE
+from WoG.Utils import SCORES_FILE_NAME, BAD_RETURN_CODE
 from genericpath import exists
 import os
 # from MainScores import
 
 
 def get_score():
-    exists = os.path.isfile(SCORES_FILE_NAME)
-    if exists:
+    exist = os.path.isfile(SCORES_FILE_NAME)
+    if exist:
         with open(SCORES_FILE_NAME, 'r') as f:
             return f.read()
     else:
