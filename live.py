@@ -1,6 +1,6 @@
-from GuessGame import play2
-from MemoryGame import play
-from CurrencyRouletteGame import play3
+from games.GuessGame import play2
+from games.MemoryGame import play
+from games.CurrencyRouletteGame import play3
 from Score import add_score
 
 
