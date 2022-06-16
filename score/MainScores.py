@@ -1,5 +1,7 @@
 from flask import Flask
-from Utils import SCORES_FILE_NAME
+from WoG.Utils import SCORES_FILE_NAME
+
+# print(f"WoG/{SCORES_FILE_NAME}")
 
 app = Flask(__name__)
 
@@ -7,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def show_score():
     try:
-        with open(SCORES_FILE_NAME, 'r') as f:
+        with open(f"C:\\Users\\PC\\PycharmProjects\\pythonProject\\1803\\WoG\\{SCORES_FILE_NAME}", 'r') as f:
             score = f.read()
             return f"""
     <!DOC TYPE html>

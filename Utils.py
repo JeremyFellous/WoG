@@ -1,4 +1,4 @@
-SCORES_FILE_NAME = "score/Scores.txt"
+SCORES_FILE_NAME = "Scores.txt"
 BAD_RETURN_CODE = 1
 
 
