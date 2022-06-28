@@ -17,3 +17,4 @@ def main_function():
     if test_scores_service():
         return "0"
     return "-1"
+
