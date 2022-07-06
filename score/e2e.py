@@ -18,3 +18,5 @@ def main_function():
         return "0"
     return "-1"
 
+
+main_function()
