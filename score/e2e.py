@@ -15,8 +15,9 @@ def test_scores_service():
 
 def main_function():
     if test_scores_service():
-        return "0"
-    return "-1"
+        print("0")
+    else:
+        print("-1")
 
 
 main_function()
