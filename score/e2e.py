@@ -10,7 +10,6 @@ def test_scores_service():
     if mys:
         if 1000 < mys < 2000:
             return True
-    return False
 
 
 def main_function():
