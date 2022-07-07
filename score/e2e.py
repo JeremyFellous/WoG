@@ -6,9 +6,9 @@ def test_scores_service():
     sc = webdriver.Chrome(executable_path="C:/web drivers/chromedriver.exe")
     sc.get("http://127.0.0.1:5000/")
     mys = sc.find_element(By.XPATH, '/html/body/h1/div').text
-    # mys = mys.isnumeric()
+    mys = mys.isnumeric()
     if mys:
-        if 1000 < mys < 2000:
+        if 0 < mys < 1000:
             return True
         return False
 
